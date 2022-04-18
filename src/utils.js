@@ -15,7 +15,7 @@ export async function initContract() {
   // Getting the Account ID. If still unauthorized, it's just empty string
   window.accountId = window.walletConnection.getAccountId()
 
-  window.account= new Account(near.connection, accountId)
+  window.account= new Account(near.connection,accountId)
 
   // Initializing our contract APIs by contract name and configuration
   window.contract = await new Contract(window.walletConnection.account(), nearConfig.contractName, {
