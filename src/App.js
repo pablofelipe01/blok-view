@@ -4,6 +4,7 @@ import { login, logout } from './utils'
 import './global.css'
 import Metadata from './Components/Metadata'
 import SendTokens from './Components/SendTokens'
+import ActiveKeys from './Components/ActiveKeys'
 
 import './scss/AppStyles.scss'
 import {Container, Navbar, NavDropdown, Nav, Row, Col, Card, Button} from 'react-bootstrap'
@@ -39,7 +40,7 @@ export default function App() {
       <Row className="d-flex justify-content-center">
         <SendTokens />
       </Row>
-      <Row className="d-flex justify-content-center">Active Keys</Row>
+      <Row className="d-flex justify-content-center"><ActiveKeys /></Row>
 
     </Container>
     :<Card>
